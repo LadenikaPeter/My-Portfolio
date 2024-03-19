@@ -20,7 +20,7 @@ export default function Hero() {
           <p className="font-normal text-lg text-slate-400">Hello, I'm</p>
 
           <h2 className="text-3xl lg:text-4xl font-medium mt-3 tracking-tighter">
-            Sonia Uduma.
+            Ladenika Peter.
           </h2>
 
           <div className="mt-3">
@@ -62,7 +62,7 @@ export default function Hero() {
             <div className="lg:ml-7 flex items-center">
               <a
                 className="mr-10 shadow-xl flex border px-3 py-2 rounded-md border-gray-700 text-slate-200 font-light text-sm items-center gap-1 hover:scale-110 transition ease-in-out duration-500"
-                href="mailto:sohnyauduma@gmail.com"
+                href="mailto:peterladenika@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -71,7 +71,7 @@ export default function Hero() {
               </a>
               <a
                 className="flex text-slate-200 border px-3 py-2 rounded-md border-gray-700 font-light text-sm items-center gap-1 hover:scale-110 transition ease-in-out duration-500"
-                href="https://drive.google.com/file/d/1k5NZWBi5kY-IfRl-zivMSXJCm9FFsso1/view?usp=sharing"
+                href="https://drive.google.com/file/d/1MkhJPE9zSFaD47FeAA7uaBzLGttyfkVt/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >

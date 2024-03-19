@@ -7,7 +7,7 @@ export default function Navbar() {
       <div className="flex items-center justify-end h-full font-light text-sm">
         <a
           className="items-center gap-1 hover:scale-110 transition ease-in-out duration-500 hidden lg:flex"
-          href="https://github.com/uduma-sonia"
+          href="https://github.com/LadenikaPeter"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -16,7 +16,7 @@ export default function Navbar() {
         </a>
         <a
           className="mx-10 items-center gap-1 hover:scale-110 transition ease-in-out duration-500 hidden lg:flex"
-          href="https://www.linkedin.com/in/sonia-uduma-3529501ba/"
+          href="https://www.linkedin.com/in/peter-ladenika/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -24,26 +24,16 @@ export default function Navbar() {
           LinkedIn
         </a>
 
-        {/* <a
-          className="items-center gap-1 hover:scale-110 transition ease-in-out duration-500 hidden lg:flex"
-          href="https://twitter.com/Sonia_Uduma"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FiTwitter size="0.8rem" />
-          Twitter
-        </a> */}
-
         <a
           className="mr-10 lg:hidden"
-          href="mailto:sohnyauduma@gmail.com"
+          href="mailto:peterladenika@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           Email
         </a>
         <a
-          href="https://drive.google.com/file/d/1k5NZWBi5kY-IfRl-zivMSXJCm9FFsso1/view?usp=sharing"
+          href="https://drive.google.com/file/d/1MkhJPE9zSFaD47FeAA7uaBzLGttyfkVt/view?usp=sharing"
           target="_blank"
           className="lg:hidden"
           rel="noopener noreferrer"

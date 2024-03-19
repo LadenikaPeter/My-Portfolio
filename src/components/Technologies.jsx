@@ -14,13 +14,12 @@ export default function Technologies() {
         <li>JavaScript</li>
         <li>TypeScript</li>
         <li>React</li>
-        <li>React Native</li>
+        <li>Angular</li>
         <li>Next.jS</li>
-        <li>Svelte</li>
-        <li>Grails</li>
-        <li>GraphQL</li>
+        <li>NgRx</li>
         <li>Redux</li>
-        <li>Cypress</li>
+        <li>Bootstrap</li>
+        <li>Tailwind</li>
       </ul>
 
       <p className="mb-4 mt-6 text-sm flex items-center">
@@ -28,11 +27,9 @@ export default function Technologies() {
       </p>
 
       <ul className="text-xs text-slate-400 flex gap-5 max-w-sm flex-wrap">
-        <li>SWR</li>
-        <li>React Query</li>
+        <li>TanStack Query</li>
         <li>Vite</li>
         <li>Git</li>
-        <li>Wordpress</li>
         <li>Firebase</li>
         <li>SEO</li>
         <li>PWAs</li>
