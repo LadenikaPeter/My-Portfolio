@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { IoMdArrowDropright } from "react-icons/io";
 import {
   BsFillArrowRightCircleFill,
@@ -12,22 +12,78 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation, Autoplay } from "swiper";
 import { featuredProects, otherProjects } from "../constants/Home";
+import SplitType from "split-type";
+import gsap from "gsap";
 
 export default function Hero() {
+  const myName = useRef(null);
+  const myDescription = useRef(null);
+
+  useEffect(() => {
+    if (myName.current) {
+      const name = SplitType.create(myName.current, { types: "chars" });
+      const nameAnimation = name.chars;
+
+      gsap.fromTo(
+        nameAnimation,
+        {
+          y: 100,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          stagger: 0.05,
+          duration: 2,
+          ease: "power4.out",
+        }
+      );
+    }
+    if (myDescription.current) {
+      const description = SplitType.create(myDescription.current, {
+        types: "lines",
+      });
+      const descriptionAnimation = description.lines;
+
+      gsap.fromTo(
+        descriptionAnimation,
+        {
+          y: 100,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          stagger: 0.05,
+          duration: 2,
+          ease: "power4.out",
+        }
+      );
+    }
+  }, []);
+
   return (
     <div className="text-slate-200 px-[1rem] md:px-[4rem] pt-10">
       <div className="flex items-start justify-between flex-col lg:flex-row">
         <div className="lg:w-[50%] w-full lg:sticky top-5">
           <p className="font-normal text-lg text-slate-400">Hello, I'm</p>
 
-          <h2 className="text-3xl lg:text-4xl font-medium mt-3 tracking-tighter">
+          <h2
+            style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}
+            ref={myName}
+            className="text-3xl lg:text-4xl font-medium mt-3 tracking-tighter"
+          >
             Ladenika Peter.
           </h2>
 
           <div className="mt-3">
             <p
+              ref={myDescription}
               className="font-extralight text-sm max-w-xs lg:max-w-md"
-              style={{ lineHeight: "23px" }}
+              style={{
+                lineHeight: "23px",
+                clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
+              }}
             >
               I am an experienced front-end developer and
               <br />I build amazing products for the web.

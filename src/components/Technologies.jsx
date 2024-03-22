@@ -1,5 +1,6 @@
 import React from "react";
 import { IoMdArrowDropright } from "react-icons/io";
+import { FamiliarWithArray, technologiesArray } from "../constants/TechStack";
 
 export default function Technologies() {
   return (
@@ -9,17 +10,9 @@ export default function Technologies() {
       </p>
 
       <ul className="text-xs text-slate-400 flex gap-5 max-w-sm flex-wrap">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>TypeScript</li>
-        <li>React</li>
-        <li>Angular</li>
-        <li>Next.jS</li>
-        <li>NgRx</li>
-        <li>Redux</li>
-        <li>Bootstrap</li>
-        <li>Tailwind</li>
+        {technologiesArray?.map((technology) => {
+          return <li key={technology.key}>{technology.item}</li>;
+        })}
       </ul>
 
       <p className="mb-4 mt-6 text-sm flex items-center">
@@ -27,13 +20,9 @@ export default function Technologies() {
       </p>
 
       <ul className="text-xs text-slate-400 flex gap-5 max-w-sm flex-wrap">
-        <li>TanStack Query</li>
-        <li>Vite</li>
-        <li>Git</li>
-        <li>Firebase</li>
-        <li>SEO</li>
-        <li>PWAs</li>
-        <li>Version Control</li>
+        {FamiliarWithArray?.map((technology) => {
+          return <li key={technology.key}>{technology.item}</li>;
+        })}
       </ul>
     </div>
   );
