@@ -1,7 +1,7 @@
 export const featuredProects = [
   {
     name: "GivingBack",
-    description: "An all-in-one HR solution.",
+    description: "A platform that allows sponsors to support local projects.",
     tools: ["REACT", "TYPESCRIPT"],
     live_link: "https://givingbackng.org/",
     npm: false,
