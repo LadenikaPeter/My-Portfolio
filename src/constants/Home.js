@@ -17,6 +17,14 @@ export const featuredProects = [
 
 export const otherProjects = [
   {
+    name: "Knowledge Up",
+    description: "A cybersecurity assessment platform for athletes.",
+    tools: ["REACT", "TYPESCRIPT", "TAILWIND CSS"],
+    github_link: "https://github.com/LadenikaPeter/Sport-and-tech-questionnaire",
+    live_link: "https://knowledgeup.netlify.app/",
+    npm: false,
+  },
+  {
     name: "Next move agency",
     description: "A static web platform to streamline your house-hunting.",
     tools: ["REACT", "TAILWIND CSS"],
